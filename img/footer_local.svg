@@ -1,0 +1,11 @@
+<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="ion:location-outline" clip-path="url(#clip0_136_3110)">
+<path id="Vector" d="M8 2.47168C5.51562 2.47168 3.5 4.39012 3.5 6.75293C3.5 9.47168 6.5 13.7801 7.60156 15.2682C7.64729 15.3311 7.70722 15.3822 7.77646 15.4174C7.84571 15.4527 7.9223 15.471 8 15.471C8.0777 15.471 8.15429 15.4527 8.22354 15.4174C8.29278 15.3822 8.35271 15.3311 8.39844 15.2682C9.5 13.7807 12.5 9.47387 12.5 6.75293C12.5 4.39012 10.4844 2.47168 8 2.47168Z" stroke="#3A97E3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M8 8.47168C8.82843 8.47168 9.5 7.80011 9.5 6.97168C9.5 6.14325 8.82843 5.47168 8 5.47168C7.17157 5.47168 6.5 6.14325 6.5 6.97168C6.5 7.80011 7.17157 8.47168 8 8.47168Z" stroke="#3A97E3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_136_3110">
+<rect width="16" height="16" fill="white" transform="translate(0 0.97168)"/>
+</clipPath>
+</defs>
+</svg>
