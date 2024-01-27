@@ -137,12 +137,9 @@
                   <li class="sub-menu-item">
                     <a href="motorRepair.html">AC & DC Motor services</a>
                   </li>
-                  <li class="sub-menu-item">
-                    <a href="motorRepair.html">Feedback repair</a>
-                  </li>
                 </ul>
               </li>
-              <li class="nav-item">
+              <li class="nav-item current">
                 <p class="nav-link">Products +</p>
                 <ul class="sub-menu">
                   <li class="sub-menu-item">
@@ -199,209 +196,146 @@
         </div>
       </div>
     </header>
-    <section
-      class="pageHero"
-      style="background-image: url('./img/pageHero.jpeg')"
-    >
-      <div class="wrapper">
-        <a href="blog.html" class="back"
-          ><img src="./img/backPg.svg" alt="" />Back</a
-        >
-        <div class="container center">
-          <h1 class="hero-title">CNC Board repair service</h1>
-          <div class="catrgoties">
-            <p class="categories-item">custom solutions</p>
-            <p class="categories-item">lsis</p>
-            <p class="categories-item">demo kit</p>
-            <p class="categories-item">training aid</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="blog-content">
-      <div class="top">
-        <img src="./img/backDotsDown.svg" alt="" class="back" />
-        <div class="container">
-          <div class="row">
-            <div class="text-block">
-              <p class="title_24">What is a Programmable Logic Controller?</p>
-              <p class="text_16">
-                A Programmable Logic Controller, also known as PLC, is a robust
-                computer designed to perform control functions in industrial
-                applications. PLC’s were initially built to replace
-                electromechanical relay systems that were very large and complex
-                control systems. When it comes down to modifying the operation
-                of a control system there is no need to rewire a large bank of
-                relays, instead, a quick download from PC or programming device
-                enables control logic changes in a matter of seconds. With a
-                very large scale of applications, PLCs today are modular meaning
-                users can add a wide assortment of functionality including
-                position control, analog control, motor control, etc.
-              </p>
-            </div>
-            <img src="./img/blog.jpeg" alt="" />
-          </div>
-          <div class="card">
-            <p class="title_24">Main components and Functions</p>
-            <p class="text_16">
-              Programmable Logic Controllers consist of 2 sections, Central
-              Processing Unit (CPU) and Inputs/Outputs. The CPU stores and
-              process program data, while I/O modules are connected to the rest
-              of the machine providing information to the CPU. CPU reads input
-              data from connected field devices through the use of its input
-              interfaces and then executes or performs the control program that
-              has been stored in its memory system. PLC programs are created
-              through ladder logic which closely resembles relay-based wiring
-              schematics, some programs allow to write functions in C or program
-              in C as well, but ladder logic is most common for plc Programming.
-              Based on the program, the PLC writes or updates output devices via
-              the output interfaces. This process, also known as scanning,
-              typically continues in the same sequence without interruption and
-              changes only when a change is made to the control program. Some
-              applications may depend on some type of communication to export
-              application data recorded. PLCs come equipped with numerous ports
-              and communication protocols that allow the PLC to communicate with
-              multiple systems. In order to communicate with PLC in real-time,
-              an HMI or Human Machine Interface will be needed. HMI unit is
-              usually a small or large touchscreen panel that will allow a user
-              to input data in real time to the PLC.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="bottom">
-        <img src="./img/back_bottom.svg" alt="" class="back" />
-        <div class="container">
-          <p class="title_24">PLC Applications</p>
-          <p class="text_16">
-            Today many industries are implementing PLC’s because the return from
-            this technology is high. Some industry applications include
-            Manufacturing industry, Chemical industry, Assembly industry, Glass
-            industry, Cement industry, Paper industry and many more. PLC use in
-            automation processes increases reliability, flexibility, accuracy,
-            efficiency, and reduction in production cost. In large process
-            plants, PLCs are being increasingly used for automatic startup and
-            shutdown of critical equipment. A PLC ensures that equipment cannot
-            be started unless all the conditions for a safe start have been
-            established. It also monitors the conditions necessary for the safe
-            running of the equipment and trips the equipment whenever any
-            abnormality in the system is detected. PLC use is growing between
-            many industries, and with its modular design, these controllers can
-            be used in numerous types of applications.
-          </p>
-        </div>
-      </div>
-    </section>
-    <section class="similarBLog">
+    <section class="requestQoute">
       <div class="container">
-        <h2 class="section-title">Similar blogs</h2>
-        <div class="blogs-slider">
-          <a href="openBlog.html" class="similarBLog-item">
-            <img src="./img/blog.jpeg" alt="" />
+        <a href="openProduct.html" class="back">
+          <img src="./img/chevron-back.svg" alt="" />
+          Back
+        </a>
+        <div class="requestWrapper">
+          <div class="request-form">
+            <form action="" class="form" id="request-form">
+              <div class="rowTab checkbox">
+                <p class="question">Requested service:*</p>
+                <div class="check-list">
+                  <label class="container"
+                    >New
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container"
+                    >Refurbished
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container"
+                    >Repair
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container"
+                    >Exchange
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+              <input type="text" name="company" placeholder="Company name" />
+              <div class="row">
+                <div class="input-wrapper">
+                  <input
+                    type="text"
+                    name="city"
+                    placeholder="City"
+                    class="city"
+                  />
+                </div>
+                <div class="input-wrapper">
+                  <input
+                    type="text"
+                    name="zip"
+                    placeholder="Zip-code*"
+                    class="zipCode"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-wrapper">
+                  <input
+                    type="text"
+                    placeholder="Name*"
+                    name="name"
+                    id="name"
+                    class="inputName"
+                    required
+                  />
+                </div>
+                <div class="input-wrapper">
+                  <input
+                    type="tel"
+                    name="phone"
+                    id="tel"
+                    class="phoneInput"
+                    required
+                    placeholder="(xxx) xxx-xxxx"
+                  />
+                </div>
+              </div>
+              <div class="input-wrapper">
+                <input
+                  id="email"
+                  class="input"
+                  autocomplete="off"
+                  type="text"
+                  placeholder="Enter your email"
+                />
+              </div>
+              <textarea name="hear" placeholder="How did you hear about us?">
+              </textarea>
+              <textarea name="message" placeholder="Message*"> </textarea>
+              <p class="text_14">* Required Fields</p>
+              <div class="bottom">
+                <div class="recaptcha"></div>
+                <button type="submit" class="btn">Send message</button>
+              </div>
+            </form>
+          </div>
+          <div class="requestFor">
             <div class="info">
-              <p class="title_20">CNC Routers For The Hobbyists Like You</p>
-              <p class="text_16">
-                If you are experiencing problems while rigid tapping with your
-                Yaskawa 626VM3 spindle drive, there are likely two parameters
-                you need to look at
+              <p class="text_14">Quote Request for:</p>
+              <p class="title_32">
+                AC Technology Corp M1275C General Purpose Inverter
               </p>
+              <div class="prod-data-list">
+                <div class="prod-data-item sku">
+                  <p class="data-type">SKU:</p>
+                  <p class="data">M1275C</p>
+                </div>
+              </div>
+              <p class="price">$100.90</p>
             </div>
-          </a>
-          <a href="openBlog.html" class="similarBLog-item">
-            <img src="./img/blog.jpeg" alt="" />
-            <div class="info">
-              <p class="title_20">CNC Routers For The Hobbyists Like You</p>
-              <p class="text_16">
-                If you are experiencing problems while rigid tapping with your
-                Yaskawa 626VM3 spindle drive, there are likely two parameters
-                you need to look at
-              </p>
+            <div class="imgCard">
+              <img src="./img/prod.svg" alt="" class="prodImg" />
             </div>
-          </a>
-          <a href="openBlog.html" class="similarBLog-item">
-            <img src="./img/blog.jpeg" alt="" />
-            <div class="info">
-              <p class="title_20">CNC Routers For The Hobbyists Like You</p>
-              <p class="text_16">
-                If you are experiencing problems while rigid tapping with your
-                Yaskawa 626VM3 spindle drive, there are likely two parameters
-                you need to look at
-              </p>
+            <div class="pricing">
+              <table>
+                <thead>
+                  <tr>
+                    <th>PRICING:</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>New:</td>
+                    <td>Contact for pricing</td>
+                  </tr>
+                  <tr>
+                    <td>Refurbished:</td>
+                    <td>Contact for pricing</td>
+                  </tr>
+                  <tr>
+                    <td>Repair:</td>
+                    <td>4927.52</td>
+                  </tr>
+                  <tr>
+                    <td>Exchange:</td>
+                    <td>Contact for pricing</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-          </a>
+          </div>
         </div>
-      </div>
-    </section>
-    <section
-      class="callToAction"
-      style="background-image: url('./img/hero-service.jpeg')"
-    >
-      <div class="wrapper">
-        <div class="container">
-          <h2 class="section-title">Recently repaired</h2>
-          <p class="text_16">Daily feed from our order tracking system</p>
-          <p class="title_24">Ready to place the order?</p>
-          <p class="text_16">
-            You know who we are, what we do and how we do it, so let's get
-            started!
-          </p>
-          <a href="#" class="btn">start your repair</a>
-        </div>
-      </div>
-    </section>
-    <section
-      class="contactUs"
-      style="background-image: url('./img/contactBack.svg')"
-    >
-      <div class="back"></div>
-      <div class="container">
-        <h2 class="section-title">Contact us!</h2>
-
-        <form action="post" id="main-form" class="form">
-          <div class="row1">
-            <div class="input-wrapper">
-              <input
-                type="text"
-                placeholder="Name*"
-                name="name"
-                id="name"
-                class="inputName"
-                required
-              />
-            </div>
-            <div class="input-wrapper">
-              <input
-                type="tel"
-                name="phone"
-                id="tel"
-                class="phoneInput"
-                required
-                placeholder="(xxx) xxx-xxxx"
-              />
-            </div>
-          </div>
-          <div class="input-wrapper">
-            <input
-              id="email"
-              class="input"
-              autocomplete="off"
-              type="text"
-              placeholder="Enter your email"
-            />
-          </div>
-          <div class="custom-select input">
-            <select name="service">
-              <option selected disabled>Services</option>
-              <option value="AC & DC Drives">AC & DC Drives</option>
-              <option value="AC & DC Drives">Power supplies</option>
-              <option value="AC & DC Drives">Industrial displays</option>
-              <option value="AC & DC Drives">Industrial Controls</option>
-              <option value="AC & DC Drives">CNC Boards</option>
-              <option value="AC & DC Drives">Feedback devices</option>
-            </select>
-          </div>
-          <button class="btn" type="submit">Request quote</button>
-        </form>
       </div>
     </section>
     <footer class="footer">

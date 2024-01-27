@@ -86,6 +86,13 @@ $(".faq-item").click(function (event) {
   }
 });
 
+$(".category").click(function (event) {
+  $(".categories-card").toggleClass("open");
+});
+$(".categories-card .close").click(function (event) {
+  $(".categories-card").toggleClass("open");
+});
+
 //-------------------------_SLIDERS_---------------------------//
 
 $(".issues-slider").slick({
@@ -149,8 +156,8 @@ $(".services-slider").slick({
   slidesToShow: 3,
   autoplay: true,
   autoplaySpeed: 2000,
-  prevArrow: $(".repairServices").find(".prev"),
-  nextArrow: $(".repairServices").find(".next"),
+  prevArrow: $(".services-slider").closest("section").find(".prev"),
+  nextArrow: $(".services-slider").closest("section").find(".next"),
   responsive: [
     {
       breakpoint: 1024,
@@ -201,6 +208,36 @@ $(".blogs-slider").slick({
       settings: {
         slidesToShow: 1,
         centerMode: true,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+});
+$(".similar-product-slider").slick({
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  arrows: false,
+  responsive: [
+    {
+      breakpoint: 1300,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
         slidesToScroll: 1,
       },
     },
@@ -339,9 +376,43 @@ $(document).ready(function () {
     $(this).closest(".fileinput").find(".file-name").val(fileName);
   });
 });
-const validation = new JustValidate("#main-form");
+// const validation = new JustValidate("#main-form");
+// validation
+//   .addField("#name", [
+//     {
+//       rule: "required",
+//       errorMessage: "Name is required",
+//     },
+//     {
+//       rule: "minLength",
+//       value: 2,
+//     },
+//   ])
+//   .addField("#tel", [
+//     {
+//       rule: "required",
+//       errorMessage: "Phone number is required",
+//     },
+//     {
+//       rule: "minLength",
+//       value: 14,
+//       errorMessage: "The field must contain a minimum of 10 characters",
+//     },
+//   ])
+//   .addField("#email", [
+//     {
+//       rule: "required",
+//       errorMessage: "Email is required",
+//     },
+//     {
+//       rule: "email",
+//       errorMessage: "Email is invalid!",
+//     },
+//   ]);
+
+const validation = new JustValidate(".form");
 validation
-  .addField("#name", [
+  .addField(".inputName", [
     {
       rule: "required",
       errorMessage: "Name is required",
@@ -351,7 +422,7 @@ validation
       value: 2,
     },
   ])
-  .addField("#tel", [
+  .addField(".phoneInput", [
     {
       rule: "required",
       errorMessage: "Phone number is required",
@@ -371,4 +442,38 @@ validation
       rule: "email",
       errorMessage: "Email is invalid!",
     },
-  ]);
+  ])
+  .addField(".inputLName", [
+    {
+      rule: "required",
+      errorMessage: "Last name is required",
+    },
+    {
+      rule: "minLength",
+      value: 2,
+    },
+  ])
+
+  .addField("select", [
+    {
+      rule: "required",
+      errorMessage: "Name is required",
+    },
+  ])
+  .addField(".file1", [
+    {
+      rule: "minFilesCount",
+      value: 1,
+      errorMessage: "File is required",
+    },
+  ])
+  .addField(".file2", [
+    {
+      rule: "minFilesCount",
+      value: 1,
+      errorMessage: "File is required",
+    },
+  ])
+  .addRequiredGroup(".radio-list1")
+  .addRequiredGroup(".radio-list2")
+  .addRequiredGroup(".radio-list3");

@@ -146,7 +146,7 @@
                 <p class="nav-link">Products +</p>
                 <ul class="sub-menu">
                   <li class="sub-menu-item">
-                    <a href="#">Product catalog</a>
+                    <a href="catalog.html">Product catalog</a>
                   </li>
                   <li class="sub-menu-item">
                     <a href="productSearch.html">Product search</a>
@@ -269,14 +269,11 @@
           <form action="" class="application-form form">
             <div class="input">
               <span class="label-text">Position applying for: *</span>
-              <select name="service">
-                <option selected disabled>Choose</option>
-                <option value="AC & DC Drives">AC & DC Drives</option>
-                <option value="AC & DC Drives">Power supplies</option>
-                <option value="AC & DC Drives">Industrial displays</option>
-                <option value="AC & DC Drives">Industrial Controls</option>
-                <option value="AC & DC Drives">CNC Boards</option>
-                <option value="AC & DC Drives">Feedback devices</option>
+              <select name="service" class="select">
+                <option value="">Choose</option>
+                <option value="value1">value1</option>
+                <option value="value2">value2</option>
+                <option value="value3">value3</option>
               </select>
             </div>
             <div class="row">
@@ -291,13 +288,18 @@
               </div>
               <div class="input">
                 <span class="label-text">Last name: *</span>
-                <input type="text" name="name" placeholder="Last name" />
+                <input
+                  type="text"
+                  name="name"
+                  class="inputLName"
+                  placeholder="Last name"
+                />
               </div>
             </div>
             <div class="row">
               <div class="input">
                 <span class="label-text">Email address: *</span>
-                <input type="text" name="mail" placeholder="Email" />
+                <input type="text" name="mail" id="email" placeholder="Email" />
               </div>
               <div class="input">
                 <span class="label-text">Phone number: *</span>
@@ -315,7 +317,7 @@
               <p class="question">
                 Were you referred to us by a current Precision Zone employee? *
               </p>
-              <div class="radio-list">
+              <div class="radio-list radio-list1">
                 <label class="container"
                   >Yes
                   <input type="radio" value="Yes" name="2" />
@@ -333,7 +335,7 @@
                 Have you previously worked in the Industrial Electronics
                 Industry? *
               </p>
-              <div class="radio-list">
+              <div class="radio-list radio-list2">
                 <label class="container"
                   >Yes
                   <input type="radio" value="Yes" name="3" />
@@ -348,7 +350,7 @@
             </div>
             <div class="rowTab">
               <p class="question">Prior relevant experience *</p>
-              <div class="radio-list">
+              <div class="radio-list radio-list3">
                 <label class="container"
                   >Less than 1 year
                   <input type="radio" value=">1" name="4" />
@@ -372,9 +374,9 @@
               </div>
             </div>
             <div class="row file-row">
-              <div class="fileinput">
+              <div class="fileinput fileinput1">
                 <span class="label-text">Upload your resume *</span>
-                <input type="file" name="file" id="file" class="file" />
+                <input type="file" name="file" id="file" class="file1 file" />
                 <div class="file-wrap">
                   <input
                     type="text"
@@ -387,15 +389,15 @@
                 </div>
                 <div class="file-type">PDF and DOC file formats accepted</div>
               </div>
-              <div class="fileinput">
+              <div class="fileinput fileinput2">
                 <span class="label-text">Upload your resume *</span>
-                <input type="file" name="file" id="file" class="file" />
+                <input type="file" name="file" id="file" class="file file2" />
                 <div class="file-wrap">
                   <input
                     type="text"
                     name="file-name"
                     id="file-name"
-                    class="с"
+                    class="file-name"
                     readonly="readonly"
                   />
                   <input type="button" class="file-btn" value="Browse files" />
