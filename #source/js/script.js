@@ -69,6 +69,25 @@ $(".filter-item").click(function () {
         ],
       });
   }
+  if ($(window).width() < 1024) {
+    $(".prod_list")
+      .slick("unslick")
+      .slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true,
+        responsive: [
+          {
+            breakpoint: 744,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+        ],
+      });
+  }
 });
 
 $(".faq-item").click(function (event) {

@@ -1381,7 +1381,7 @@
     position: relative;
     @media screen and (max-width: 744px) {
       height: auto;
-      padding: 48px 0;
+      padding: 60px 0;
     }
   }
   .back {
@@ -1398,6 +1398,8 @@
     top: 50px;
     @media screen and (max-width: 768px) {
       left: 15px;
+      top: 20px;
+      font-size: 16px;
     }
   }
   .container {
@@ -3184,7 +3186,7 @@
   .card {
     padding: 24px;
     background: #f3f3f3;
-    width: 50%;
+    width: 40%;
     @media screen and (max-width: 1024px) {
       width: 100%;
     }
@@ -3207,7 +3209,7 @@
   }
 
   .search_wrap {
-    width: 50%;
+    width: 60%;
     height: fit-content;
     form {
       margin: 0;
@@ -3414,10 +3416,25 @@
         border: none;
       }
     }
+    &:first-child {
+      @media screen and (max-width: 1024px) {
+        order: 2;
+      }
+    }
+    &:nth-child(2) {
+      @media screen and (max-width: 1024px) {
+        order: 1;
+      }
+    }
+    &:last-child {
+      @media screen and (max-width: 1024px) {
+        order: 0;
+      }
+    }
     @media screen and (max-width: 1024px) {
       padding: 0;
       width: calc((100% - 16px) / 2);
-      &:last-child {
+      &:first-child {
         width: 100%;
       }
     }
@@ -3444,6 +3461,7 @@
     color: var(--white);
     background-color: var(--blue);
     white-space: nowrap;
+    text-align: center;
   }
 }
 .termsSection {

@@ -243,6 +243,9 @@ header.header {
       align-items: center;
       padding: 0 16px;
       gap: 32px;
+      gap: 0;
+      width: fit-content;
+      margin: 0 auto;
     }
   }
   .nav-item {
@@ -255,6 +258,11 @@ header.header {
     @media screen and (max-width: 1334px) {
       flex-direction: column;
       align-items: stretch;
+      padding: 16px 0;
+      width: 100%;
+      &:not(:last-child) {
+        border-bottom: 1px solid #415ea9;
+      }
     }
     &:hover,
     &:active,
@@ -282,6 +290,7 @@ header.header {
     color: #ffffff;
     cursor: pointer;
     opacity: 0.7;
+
     .icon {
       fill: #ffffff;
       transition: all 0.1s linear;
@@ -293,6 +302,9 @@ header.header {
     }
     @media screen and (max-width: 1145px) {
       font-size: 24px;
+    }
+    @media screen and (max-width: 744px) {
+      font-size: 20px;
     }
   }
   .nav-item {
